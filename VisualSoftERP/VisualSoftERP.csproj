@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B899063D-7626-4D58-A8BC-B8E9F10BC463}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VisualSoftERP</RootNamespace>
+    <AssemblyName>VisualSoftERP</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\nDiexsa4\sys\sistemas\VisualSoftERP_OneClick\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>3A77A3F0F0B5567D17D450A15624A766C830C788</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>VisualSoftERP_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v21.2" />
+    <Reference Include="DevExpress.Data.Desktop.v21.2" />
+    <Reference Include="DevExpress.Data.v21.2" />
+    <Reference Include="DevExpress.Dialogs.v21.2.Core, Version=21.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v21.2, Version=21.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v21.2" />
+    <Reference Include="DevExpress.Sparkline.v21.2.Core" />
+    <Reference Include="DevExpress.XtraDialogs.v21.2, Version=21.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v21.2" />
+    <Reference Include="DevExpress.XtraBars.v21.2" />
+    <Reference Include="DevExpress.XtraGrid.v21.2" />
+    <Reference Include="DevExpress.XtraLayout.v21.2" />
+    <Reference Include="DevExpress.XtraNavBar.v21.2, Version=21.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v21.2" />
+    <Reference Include="DevExpress.Printing.v21.2.Core" />
+    <Reference Include="DevExpress.XtraTreeList.v21.2, Version=21.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraWizard.v21.2, Version=21.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.8.0.0\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Chats\Chats_Class.cs" />
+    <Compile Include="Classes\Login_Class.cs" />
+    <Compile Include="Classes\Menu_Class.cs" />
+    <Compile Include="Classes\Program_Class.cs" />
+    <Compile Include="Classes\Tools\ProgramControl\Access_Class.cs" />
+    <Compile Include="Classes\Tools\ProgramControl\Permissions_Class.cs" />
+    <Compile Include="Classes\Tools\ProgramControl\Users_Class.cs" />
+    <Compile Include="Classes\Tools\ProgramControl\UserTypes_Class.cs" />
+    <Compile Include="Classes\Utils\Combos_Class.cs" />
+    <Compile Include="Classes\Utils\EncryptHelper_Class.cs" />
+    <Compile Include="Classes\Utils\Base_Class.cs" />
+    <Compile Include="Classes\Utils\GridViewHelper_Class.cs" />
+    <Compile Include="Classes\Utils\Modals_Class.cs" />
+    <Compile Include="Classes\Wizzard_Class.cs" />
+    <Compile Include="Forms\Chats\Chats_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Chats\Chats_Form.Designer.cs">
+      <DependentUpon>Chats_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login_Form.Designer.cs">
+      <DependentUpon>Login_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Menu_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Menu_Form.Designer.cs">
+      <DependentUpon>Menu_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tools\ProgramControl\Access_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tools\ProgramControl\Access_Form.Designer.cs">
+      <DependentUpon>Access_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tools\ProgramControl\Permissions_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tools\ProgramControl\Permissions_Form.Designer.cs">
+      <DependentUpon>Permissions_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tools\ProgramControl\Programs_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tools\ProgramControl\Programs_Form.Designer.cs">
+      <DependentUpon>Programs_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tools\ProgramControl\Users_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tools\ProgramControl\Users_Form.Designer.cs">
+      <DependentUpon>Users_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tools\ProgramControl\UserTypes_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tools\ProgramControl\UserTypes_Form.Designer.cs">
+      <DependentUpon>UserTypes_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Wizzard_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Wizzard_Form.Designer.cs">
+      <DependentUpon>Wizzard_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Access_Model.cs" />
+    <Compile Include="Models\Base_Model.cs" />
+    <Compile Include="Models\ChatsMessages_Model.cs" />
+    <Compile Include="Models\Chats_Model.cs" />
+    <Compile Include="Models\Company_Model.cs" />
+    <Compile Include="Models\Permissions_Model.cs" />
+    <Compile Include="Models\Programs_Model.cs" />
+    <Compile Include="Models\UsersPermissions_Model.cs" />
+    <Compile Include="Models\Users_Model.cs" />
+    <Compile Include="Models\UserTypesPermissions_Model.cs" />
+    <Compile Include="Models\UserTypes_Model.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Chats\Chats_Form.resx">
+      <DependentUpon>Chats_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login_Form.resx">
+      <DependentUpon>Login_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Menu_Form.resx">
+      <DependentUpon>Menu_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tools\ProgramControl\Access_Form.resx">
+      <DependentUpon>Access_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tools\ProgramControl\Permissions_Form.resx">
+      <DependentUpon>Permissions_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tools\ProgramControl\Programs_Form.resx">
+      <DependentUpon>Programs_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tools\ProgramControl\Users_Form.resx">
+      <DependentUpon>Users_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tools\ProgramControl\UserTypes_Form.resx">
+      <DependentUpon>UserTypes_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Wizzard_Form.resx">
+      <DependentUpon>Wizzard_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="VisualSoftERP_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Classes\Accounting\Catalogs\" />
+    <Folder Include="Classes\Accounting\Operation\" />
+    <Folder Include="Classes\Accounting\Reports\" />
+    <Folder Include="Classes\Accounts Payable\Catalogs\" />
+    <Folder Include="Classes\Accounts Payable\Operation\" />
+    <Folder Include="Classes\Accounts Payable\Reports\" />
+    <Folder Include="Classes\Accounts Receivable\Catalogs\" />
+    <Folder Include="Classes\Accounts Receivable\Operation\" />
+    <Folder Include="Classes\Accounts Receivable\Reports\" />
+    <Folder Include="Classes\BI\Catalogs\" />
+    <Folder Include="Classes\BI\Operation\" />
+    <Folder Include="Classes\BI\Reports\" />
+    <Folder Include="Classes\CCP\Catalogs\" />
+    <Folder Include="Classes\CCP\Operation\" />
+    <Folder Include="Classes\CCP\Reports\" />
+    <Folder Include="Classes\Inventary\Catalogs\" />
+    <Folder Include="Classes\Inventary\Operation\" />
+    <Folder Include="Classes\Inventary\Reports\" />
+    <Folder Include="Classes\Purchases\Catalogs\" />
+    <Folder Include="Classes\Purchases\Operation\" />
+    <Folder Include="Classes\Purchases\Reports\" />
+    <Folder Include="Classes\Sales\Catalogs\" />
+    <Folder Include="Classes\Sales\Operation\" />
+    <Folder Include="Classes\Sales\Reports\" />
+    <Folder Include="Classes\Store\Catalogs\" />
+    <Folder Include="Classes\Store\Operation\" />
+    <Folder Include="Classes\Store\Reports\" />
+    <Folder Include="Classes\Tools\InformationSending\" />
+    <Folder Include="Classes\Tools\Inquiries\" />
+    <Folder Include="Classes\Tools\Options\" />
+    <Folder Include="Classes\Tools\SAT\" />
+    <Folder Include="Forms\Accounting\Catalogs\" />
+    <Folder Include="Forms\Accounting\Operation\" />
+    <Folder Include="Forms\Accounting\Reports\" />
+    <Folder Include="Forms\Accounts Payable\Catalogs\" />
+    <Folder Include="Forms\Accounts Payable\Operation\" />
+    <Folder Include="Forms\Accounts Payable\Reports\" />
+    <Folder Include="Forms\Accounts Receivable\Catalogs\" />
+    <Folder Include="Forms\Accounts Receivable\Operation\" />
+    <Folder Include="Forms\Accounts Receivable\Reports\" />
+    <Folder Include="Forms\BI\Catalogs\" />
+    <Folder Include="Forms\BI\Operation\" />
+    <Folder Include="Forms\BI\Reports\" />
+    <Folder Include="Forms\CCP\Catalogs\" />
+    <Folder Include="Forms\CCP\Operation\" />
+    <Folder Include="Forms\CCP\Reports\" />
+    <Folder Include="Forms\Inventary\Catalogs\" />
+    <Folder Include="Forms\Inventary\Operation\" />
+    <Folder Include="Forms\Inventary\Reports\" />
+    <Folder Include="Forms\Purchases\Catalogs\" />
+    <Folder Include="Forms\Purchases\Operation\" />
+    <Folder Include="Forms\Purchases\Reports\" />
+    <Folder Include="Forms\Sales\Catalogs\" />
+    <Folder Include="Forms\Sales\Operation\" />
+    <Folder Include="Forms\Sales\Reports\" />
+    <Folder Include="Forms\Store\Catalogs\" />
+    <Folder Include="Forms\Store\Operation\" />
+    <Folder Include="Forms\Store\Reports\" />
+    <Folder Include="Forms\Tools\InformationSending\" />
+    <Folder Include="Forms\Tools\Inquiries\" />
+    <Folder Include="Forms\Tools\Options\" />
+    <Folder Include="Forms\Tools\SAT\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VS grande.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diexsa_LogoFinal-01[1].png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
